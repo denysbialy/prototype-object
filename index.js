@@ -20,8 +20,8 @@ function Car(
 
 function CarPrototype() {
   this.accelerate = function () {
-    if (this.speed === 300) {
-      return this.speed = 300;
+    if (this.speed === this.maxSpeed) {
+      return this.speed = this.maxSpeed;
     } else {
       return this.speed += 50;
     }
